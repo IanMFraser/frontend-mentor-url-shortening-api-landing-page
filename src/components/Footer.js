@@ -35,10 +35,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 <div className="footer-icons">
-                    <img src={fb} alt="facebook-icon"/>
-                    <img src={twitter} alt="twitter-icon" />
-                    <img src={pinterest} alt="pinterest-icon"/>
-                    <img src={instagram} alt="instagram-icon"/>
+                    <a href="http://facebook.com"><img src={fb} alt="facebook-icon"/></a>
+                    <a href="http://twitter.com"><img src={twitter} alt="twitter-icon" /></a>
+                    <a href="http://pinterest.com"><img src={pinterest} alt="pinterest-icon"/></a>
+                    <a href="http://instagram.com"><img src={instagram} alt="instagram-icon"/></a>
                 </div>
             </div>
         </footer>

@@ -346,6 +346,10 @@ a:hover {
   padding: 5px 0;
 }
 
+.footer-links-col li a:hover{
+  color:hsl(180, 66%, 49%);
+}
+
 .footer-icons {
   margin-left: 35px;
 }
