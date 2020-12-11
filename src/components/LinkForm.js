@@ -28,12 +28,14 @@ const LinkForm = () => {
             input.style.border = '2px solid red'
             node.appendChild(message)
             node.style.color = 'hsl(0, 87%, 67%)'
+            input.style.setProperty('--c', 'hsl(0, 87%, 67%)')
             node.style.fontSize = '0.9rem';
             form.appendChild(node)
             //after a second, revert back to normal
             setTimeout(
                 function(){
                     input.style.border = 'none'
+                    input.style.setProperty('--c', 'black')
                     form.removeChild(form.childNodes[1])
                 }, 3000
             )

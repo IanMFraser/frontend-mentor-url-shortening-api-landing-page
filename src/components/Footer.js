@@ -8,36 +8,38 @@ const Footer = () => {
     return(
         <footer className="footer">
             <h1>Shortly</h1>
-            <div>
-                <h6>Features</h6>
-                <ul>
-                    <li><a href="http://localhost:3000/">Link Shortening</a></li>
-                    <li><a href="http://localhost:3000/">Branded Links</a></li>
-                    <li><a href="http://localhost:3000/">Analytics</a></li>
-                </ul>
-            </div>
-            <div>
-                <h6>Resources</h6>
-                <ul>
-                    <li><a href="http://localhost:3000/">Blog</a></li>
-                    <li><a href="http://localhost:3000/">Developers</a></li>
-                    <li><a href="http://localhost:3000/">Support</a></li>
-                </ul>
-            </div>
-            <div>
-                <h6>Company</h6>
-                <ul>
-                    <li><a href="http://localhost:3000/">About</a></li>
-                    <li><a href="http://localhost:3000/">Our Team</a></li>
-                    <li><a href="http://localhost:3000/">Careers</a></li>
-                    <li><a href="http://localhost:3000/">Contact</a></li>
-                </ul>
-            </div>
-            <div className="footer-icons">
-                <img src={fb} alt="facebook-icon"/>
-                <img src={instagram} alt="instagram-icon"/>
-                <img src={pinterest} alt="pinterest-icon"/>
-                <img src={twitter} alt="twitter-icon" />
+            <div className="footer-links">
+                <div className="footer-links-col">
+                    <h6>Features</h6>
+                    <ul>
+                        <li><a href="http://localhost:3000/">Link Shortening</a></li>
+                        <li><a href="http://localhost:3000/">Branded Links</a></li>
+                        <li><a href="http://localhost:3000/">Analytics</a></li>
+                    </ul>
+                </div>
+                    <div className="footer-links-col">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li><a href="http://localhost:3000/">Blog</a></li>
+                            <li><a href="http://localhost:3000/">Developers</a></li>
+                            <li><a href="http://localhost:3000/">Support</a></li>
+                        </ul>
+                    </div>
+                    <div className="footer-links-col">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="http://localhost:3000/">About</a></li>
+                            <li><a href="http://localhost:3000/">Our Team</a></li>
+                            <li><a href="http://localhost:3000/">Careers</a></li>
+                            <li><a href="http://localhost:3000/">Contact</a></li>
+                        </ul>
+                    </div>
+                <div className="footer-icons">
+                    <img src={fb} alt="facebook-icon"/>
+                    <img src={twitter} alt="twitter-icon" />
+                    <img src={pinterest} alt="pinterest-icon"/>
+                    <img src={instagram} alt="instagram-icon"/>
+                </div>
             </div>
         </footer>
     )
