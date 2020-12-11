@@ -66,11 +66,11 @@ const LinkForm = () => {
             <div className="link-form-input">
                 <form onSubmit={onSubmit}>
                 <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input"></input>
-                <button className="submit-button button" type="submit">Shorten It!</button>
+                <button className="submit-button" type="submit">Shorten It!</button>
                 </form>
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}
             </div>
-            <DisplayLinks links={displayedLinks} />
+           <DisplayLinks links={displayedLinks} />
         </div>
     )
 }

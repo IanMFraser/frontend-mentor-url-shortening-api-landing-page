@@ -120,7 +120,7 @@ a:hover {
   position: relative;
   background-color: hsl(230, 25%, 95%);
   width: 100vw;
-  height: 20vh;
+  height: auto;
 }
 
 .link-form-input {
@@ -130,7 +130,7 @@ a:hover {
   width: 80%;
   padding: 60px 60px;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   top: -80px;
   left: 10%;
 }
@@ -150,12 +150,11 @@ a:hover {
 
 .display-links {
   position: relative;
-  top: 75%;
   width: 100%;
+  top: -65px;
 }
 
 .display-links ul {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: hsl(230, 25%, 95%);
@@ -205,20 +204,18 @@ a:hover {
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: -1
-
 }
 
 .info-cards {
   margin-left: 10%;
   display: flex;
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
 }
 
 .info-title {
   position: absolute;
-  top: 15%;
+  top: 5%;
   left: 35%;
   text-align: center;
   width: 35%;
@@ -231,9 +228,9 @@ a:hover {
 
 .info-card {
   margin: 10px 15px;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background-color: white;
-  width:30%;
+  width: 28%;
   height: 100%;
   border-radius: 5px;
   position: relative;
@@ -251,17 +248,17 @@ a:hover {
 .card-icon {
   background-color:hsl(257, 27%, 26%);
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
   position: absolute;
-  top: -10%;
+  top: -15%;
   text-align: center;
   align-content: center;
   align-items: center;
 }
 
 .card-icon>img{
-  margin-top: 15px;
+  margin-top: 22px;
   max-width: 100%;
 }
 
@@ -273,13 +270,30 @@ a:hover {
   height: 3%;
   background-color: hsl(180, 66%, 49%);
 }
-/* 
+
 .call-to-action {
   background-image: url('./images/bg-boost-desktop.svg');
   background-color: hsl(257, 27%, 26%);
   text-align: center;
   color:white;
-  height: 30vh;
+  height: 33vh;
+  position: relative;
+}
+
+.call-to-action-content {
+  position: absolute;
+  top: 22%;
+  left: 35%;
+}
+.call-to-action-content h1 {
+  font-size: 2.4rem;
+}
+
+.started-button {
+  margin-top: 20px;
+  padding: 15px 37px;
+  border-radius: 50px;
+  font-size: 1.3rem;
 }
 
 .footer {
@@ -287,4 +301,4 @@ a:hover {
   color:white;
   height: 40vh;
   display: flex;
-} */
+}
