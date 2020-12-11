@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navigation = () => {
     return(
-        <div>
+        <nav>
             <ul className="navigation">
                 <div className="nav-sections">
                     <li><a href="http://localhost:3000/">Features</a></li>
@@ -14,7 +14,7 @@ const Navigation = () => {
                     <li><button className="button sign-up-button">Sign Up</button></li>
                 </div>
             </ul>
-        </div>
+        </nav>
     )
 }
 

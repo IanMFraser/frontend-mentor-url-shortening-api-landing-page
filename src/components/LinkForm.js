@@ -35,7 +35,7 @@ const LinkForm = () => {
             setTimeout(
                 function(){
                     input.style.border = 'none'
-                    input.style.setProperty('--c', 'black')
+                    input.style.setProperty('--c', 'hsl(257, 7%, 63%)')
                     form.removeChild(form.childNodes[1])
                 }, 3000
             )
@@ -64,7 +64,7 @@ const LinkForm = () => {
     }, [shortUrl])
 
     return(
-        <div className="link-form">
+        <section className="link-form">
             <div className="link-form-input">
                 <form onSubmit={onSubmit}>
                 <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input"></input>
@@ -73,7 +73,7 @@ const LinkForm = () => {
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}
             </div>
            <DisplayLinks links={displayedLinks} />
-        </div>
+        </section>
     )
 }
 

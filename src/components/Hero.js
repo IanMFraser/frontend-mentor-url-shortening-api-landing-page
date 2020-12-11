@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return(
-        <div className="hero">
+        <section className="hero">
             <div className="hero-info">
                 <h1>More than just shorter links</h1>
                 <p>
@@ -11,7 +11,7 @@ const Hero = () => {
                 </p>
                 <button className="hero-button">Get Started</button>
             </div>
-        </div>
+        </section>
     )
 }
 

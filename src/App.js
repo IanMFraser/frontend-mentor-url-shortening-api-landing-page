@@ -10,14 +10,14 @@ import CallToAction from './components/CallToAction';
 const  App = () => {
 
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Hero/>
       <LinkForm />
       <Info />
       <CallToAction/>
       <Footer />
-    </div>
+    </main>
   );
 }
 

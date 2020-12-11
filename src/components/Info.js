@@ -5,7 +5,7 @@ import customizable from '../images/icon-fully-customizable.svg'
 
 const Info = () => {
     return(
-        <div className="info">
+        <section className="info">
             <div className="info-title">
                     <h1>Advanced Statistics</h1>
                     <p>Track how your links are performing across the web
@@ -50,7 +50,7 @@ const Info = () => {
                     </div>
                     <div className="green-bar"></div>
                 </div>
-            </div>
+            </section>
     )
 }
 
