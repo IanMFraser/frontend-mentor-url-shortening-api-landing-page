@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navigation = () => {
     return(
-        <nav>
-            <ul className="navigation">
+        <nav className="navigation">
+            <ul>
                 <div className="nav-sections">
                     <li><a href="http://localhost:3000/">Features</a></li>
                     <li><a href="http://localhost:3000/">Pricing</a></li>

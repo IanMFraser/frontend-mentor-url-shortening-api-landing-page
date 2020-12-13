@@ -28,7 +28,7 @@ const Info = () => {
                         <div className="card-icon">
                         <img src={records} alt="detailed-img"></img>
                         </div>
-                        <h3>Detailed Records</h3>
+                        <h2>Detailed Records</h2>
                         <p>
                         Gain insights into who is clicking your
                         links. Knowing when and where
@@ -40,7 +40,7 @@ const Info = () => {
                         <div className="card-icon">
                         <img src={customizable} alt="customizable-img"></img>
                         </div>
-                        <h3>Fully Customizable</h3>
+                        <h2>Fully Customizable</h2>
                         <p>
                         Improve brand awareness and
                         content discoverability through

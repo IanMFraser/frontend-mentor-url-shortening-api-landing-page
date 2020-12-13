@@ -18,19 +18,20 @@ const LinkForm = () => {
         e.preventDefault()
 
         if(url === ''){
-            const form = document.querySelector('.link-form-input')
+            const form = document.querySelector('.link-form').firstChild
             const input = document.querySelector('.form-input')
             const node = document.createElement('p')
             const message = document.createTextNode('Please add a link.')
 
             //if a user tries to submit an empty field, highlight the input red 
             //and display message
-            input.style.border = '2px solid red'
+            input.style.border = '4px solid hsl(0, 87%, 67%)'
             node.appendChild(message)
             node.style.color = 'hsl(0, 87%, 67%)'
             input.style.setProperty('--c', 'hsl(0, 87%, 67%)')
             node.style.fontSize = '0.9rem';
-            form.appendChild(node)
+            input.after(node)
+
             //after a second, revert back to normal
             setTimeout(
                 function(){
@@ -64,16 +65,18 @@ const LinkForm = () => {
     }, [shortUrl])
 
     return(
-        <section className="link-form">
-            <div className="link-form-input">
+        <>
+        <section className="link-form-container">
+            <div className="link-form">
                 <form onSubmit={onSubmit}>
-                <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input"></input>
-                <button className="submit-button" type="submit">Shorten It!</button>
+                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input"></input>
+                    <button className="form-submit-button" type="submit">Shorten It!</button>
                 </form>
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}
             </div>
-           <DisplayLinks links={displayedLinks} />
         </section>
+        <DisplayLinks links={displayedLinks} />
+        </>
     )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
+import hero from '../images/illustration-working.svg'
 
 const Hero = () => {
     return(
         <section className="hero">
+            <div className="hero-img">
+                <img src={hero} alt="working"></img>
+            </div>
             <div className="hero-info">
                 <h1>More than just shorter links</h1>
                 <p>

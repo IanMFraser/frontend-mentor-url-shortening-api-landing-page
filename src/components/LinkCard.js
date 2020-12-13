@@ -8,8 +8,10 @@ const LinkCard = ({link}) => {
     const copyUrl = () => {
         const button = document.getElementById(`${originalUrl}`)
         const copyText = document.querySelector('.copy-link').firstChild
+        
         const r = document.createRange()
         r.selectNode(copyText)
+
         if(!copied){
             window.getSelection().removeAllRanges()
             window.getSelection().addRange(r)
@@ -34,9 +36,9 @@ const LinkCard = ({link}) => {
     //sometimes the URL is too long for the display
     //this function truncates long URLs for the link card
     const tooLong = (longUrl) => {
-        if(longUrl.length > 50) {
+        if(longUrl.length > 25) {
             const newUrl = []
-            for(let i = 0; i < 50; i++) {
+            for(let i = 0; i < 25; i++) {
                 newUrl.push(longUrl[i])
             }
             return `${newUrl.join('')}...`
