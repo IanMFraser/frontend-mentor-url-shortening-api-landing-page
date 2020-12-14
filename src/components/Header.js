@@ -9,8 +9,8 @@ const Header = () => {
 
     const clickHandler = (e) => {
         e.preventDefault()
-        setClicked(!clicked)
         const nav = document.querySelector('.navigation')
+        setClicked(!clicked)
 
         if(clicked){
             nav.style.display = "block"

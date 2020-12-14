@@ -49,7 +49,7 @@ p {
   color:hsl(257, 7%, 63%)
 }
 
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 320px){
 
   .App {
     position: relative;
@@ -260,6 +260,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     margin: 30px 0;
+    position: relative;
   }
 
   .info-card {
@@ -298,11 +299,11 @@ p {
 
   .green-bar {
     background-color: hsl(180, 66%, 49%);
-    height: 20%;
+    height: 75%;
     width: 2%;
     position: absolute;
     left: 48%;
-    top: 45%;
+    top: 15%;
     z-index: 1;
   }
 
@@ -315,6 +316,7 @@ p {
     height: 59vh;
     text-align: center;
     position: relative;
+    padding: 0 25px;
   }
 
   .call-to-action-content {
@@ -663,7 +665,7 @@ p {
 
   .call-to-action {
     background-image: url('./images/bg-boost-desktop.svg');
-    background-size: contain;
+    background-size: cover;
     height: 33vh;
 
   }
