@@ -29,7 +29,7 @@ button:hover {
 
 li {
   list-style-type: none;
-  margin: 10px 10px;
+  margin: 0.56rem 0.56rem;
   padding: 0;
   color: hsl(257, 7%, 63%);
   font-size: 0.9rem;
@@ -49,29 +49,28 @@ p {
   color:hsl(257, 7%, 63%)
 }
 
-@media only screen and (min-width: 320px){
 
-  .App {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-  }
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    position: relative;
-    padding: 50px 25px;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  padding: 2.7rem 1.38rem; 
+}
   
-  .logo-container {
-    width: 175px;
-    height: 50px;
-    padding-top: 5px;
-  }
+.logo-container {
+  width: 175px;
+  height: 50px;
+  padding-top: 0.278rem;
+}
   
   .logo {
     width: 100%;
@@ -81,29 +80,28 @@ p {
   .fa-icon {
     font-size: 1.7em;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 0.278rem;
   }
 
   .navigation {
     display: none;
     position: absolute;
     width: 90%;
-    height: 370%;
+    height: auto;
     background-color: hsl(257, 27%, 26%);
     border-radius: 10px;
-    bottom: -370%;
-    padding: 30px 0;
+    top: 95%;
+    padding: 1.67rem 0;
     z-index: 2;
   }
   
   .navigation ul {
     text-align: center;
-    padding: 0 30px;
   }
 
   .navigation ul li {
-    font-size: 1.4em;
-    padding: 15px 5px;
+    font-size: 1.25em;
+    padding: 0.4rem 0;
   }
 
   .navigation ul li a {
@@ -112,12 +110,11 @@ p {
 
   .right {
     border-top: 1px solid hsl(257, 7%, 63%);
-    margin-top: 35px;
-    padding: 25px 0;
+    padding: 1.12rem 0 0 0;
   }
 
   .sign-up-button {
-    padding: 15px 130px;
+    padding: 0.834rem 7.2rem;
     font-size: 1em;
     border-radius: 50px;
   }
@@ -129,7 +126,7 @@ p {
 
   .hero-img {
     width: 145vw;
-    padding: 0 35px
+    padding: 0 1.94rem;
   }
 
   .hero-img img {
@@ -138,31 +135,31 @@ p {
   }
 
   .hero-info {
-    margin: 80px 25px;
+    margin: 4.45rem 1.38rem;
     text-align: center;
   }
 
   .hero-info h1{
     font-size: 3.3em;
-    line-height: 70px;
+    line-height: 3.89rem;
   }
 
   .hero-info p {
-    margin: 25px 5px;
+    margin: 1.38rem 0.278rem;
     font-size: 1.5em;
-    line-height: 45px;
+    line-height: 2.5rem;
   }
 
   .hero-button {
-    margin: 15px 0;
+    margin: 0.834rem 0;
     font-size: 1.65em;
     font-weight: 700;
-    padding: 20px 60px;
+    padding: 1.12rem 3.33rem;
     border-radius: 50px;
   }
 
   .link-form-container {
-    margin-top: 50px;
+    margin-top: 2.7rem;
     background: linear-gradient(180deg, white 50%, hsl(230, 25%, 95%) 50%);
   }
 
@@ -172,15 +169,15 @@ p {
     background-repeat: no-repeat;
     background-color: hsl(257, 27%, 26%);
     width: 90%;
-    padding: 15px 30px;
-    margin-left: 25px;
+    padding: 0.834rem 1.67rem;
+    margin-left: 1.389rem;
     border-radius: 15px;
   }
 
   .form-input {
     width: 100%;
-    padding: 25px 25px;
-    margin: 20px 0;
+    padding: 1.389rem;
+    margin: 1.12rem 0;
     border-radius: 5px;
     font-size: 1.1em;
   }
@@ -188,8 +185,8 @@ p {
   .form-submit-button {
     width: 100%;
     font-size: 1.3em;
-    padding: 25px 0px;
-    margin: 20px 0;
+    padding: 1.389rem 0;
+    margin: 1.12rem 0;
     border-radius: 5px;
   }
 
@@ -209,7 +206,7 @@ p {
     text-align: left;
     width: 90%;
     background-color:white;
-    margin: 10px 25px;
+    margin: 0.56rem 1.39rem;
     border-radius: 10px;
     font-size: 1.7em;
     font-weight: 500;
@@ -218,12 +215,12 @@ p {
   .link-card p {
     color:black;
     border-bottom: 1px solid hsl(230, 25%, 95%);
-    padding: 10px 20px;
-    margin: 5px 0;
+    padding: 0.56rem 1.12rem;
+    margin: 0.278rem 0;
   }
 
   .copy-link p {
-    margin: 5px 0;
+    margin: 0.278rem 0;
     color: hsl(180, 66%, 49%);
     border-bottom: none
   }
@@ -231,9 +228,9 @@ p {
   .copy-link-button {
     font-size: 1em;
     width: 90%;
-    padding: 15px 50px;
+    padding: 0.834rem 2.77rem;
     border-radius: 10px;
-    margin: 0 20px 20px 20px;
+    margin: 0 1.12rem 1.12rem 1.12rem;
   }
 
   .info {
@@ -242,30 +239,30 @@ p {
   }
 
   .info-title {
-    margin: 100px 10px;
+    margin: 5.55rem 0.56rem;
   }
 
   .info-title h1 {
     font-size: 2.2em;
-    margin: 25px 0;
+    margin: 1.389rem 0;
   }
   
   .info-title p {
     font-size: 1.3em;
-    line-height: 43px;
+    line-height: 2.389rem;
   }
 
   .info-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 1.67rem 0;
     position: relative;
   }
 
   .info-card {
-    margin: 75px 25px;
-    padding: 80px 30px 80px 30px;
+    margin: 4.167rem 1.389rem;
+    padding: 4.45rem 1.67rem;
     background-color: white;
     border-radius: 10px;
     position: relative;
@@ -274,12 +271,12 @@ p {
 
   .info-card h2 {
     font-size: 1.8em;
-    margin: 25px 0;
+    margin: 1.39rem 0;
   }
 
   .info-card p {
-    font-size:1.25em;
-    line-height: 35px;
+    font-size: 1.25em;
+    line-height: 1.94rem;
   }
 
   .card-icon {
@@ -316,7 +313,7 @@ p {
     height: 59vh;
     text-align: center;
     position: relative;
-    padding: 0 25px;
+    padding: 0 1.389rem;
   }
 
   .call-to-action-content {
@@ -330,9 +327,9 @@ p {
   }
 
   .started-button {
-    margin: 25px;
-    font-size:1.5em;
-    padding: 25px 65px;
+    margin: 1.389rem;
+    font-size: 1.5em;
+    padding: 1.389rem 3.61rem;
     border-radius: 50px;
   }
 
@@ -344,12 +341,12 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 70px 0px;
+    padding: 3.89rem 0;
   }
 
   .footer-logo {
     width: 30%;
-    margin: 10px 0;
+    margin: 0.56rem 0;
   }
 
   .footer-logo img {
@@ -363,20 +360,20 @@ p {
   }
 
   .footer-links-col {
-    margin: 50px 0;
+    margin: 2.78rem 0;
   }
 
   .footer-links-col h6 {
     font-size: 1.3em;
-    margin: 50px 0 40px 0;
+    margin: 2.78rem 0 2.23rem 0;
   }
 
   .footer-links-col ul {
-    margin: 10px 0;
+    margin: 0.56rem 0;
   }
 
   .footer-links-col ul li {
-    padding: 5px;
+    padding: 0.278rem;
     font-size: 1.2em;
   }
 
@@ -385,30 +382,28 @@ p {
   }
 
   .footer-icons {
-    margin-top: 20px;
+    margin-top: 1.12rem;
   }
 
   .footer-icons a {
-    margin: 0 15px;
+    margin: 0 0.834rem;
   }
 
   .footer-icons a img {
     width: 6%;
   }
 
-}
-
 @media only screen and (min-width: 750px) {
   
   .header {
     justify-content: flex-start;
     align-items: center;
-    padding: 50px 150px;
+    padding: 2.78rem 8.34rem;
   }
 
   .logo-container {
-    width: 145px;
-    padding: 10px 0;
+    width: 8.05rem;
+    padding: 0.56rem 0;
   }
 
   .fa-icon {
@@ -424,7 +419,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 0;
     z-index: 0;
   }
@@ -437,7 +432,7 @@ p {
   .nav-sections {
     display:flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 1.67rem;
   }
 
   .navigation ul li {
@@ -455,16 +450,16 @@ p {
 
   .right {
     position: absolute;
-    right: 100px;
+    right: 5.56rem;
     border-top: 0;
     margin-top: 0;
     padding: 0;
-    top: 40px;
+    top: 2.23rem;
   }
 
   .sign-up-button {
-    border-radius: 50px;
-    padding: 10px 15px;
+    border-radius: 2.78rem;
+    padding: 0.56rem 0.834rem;
     font-size: 1em;
   }
 
@@ -475,7 +470,7 @@ p {
 
   .hero-img {
     width: 55%;
-    padding: 0 35px;
+    padding: 0 1.94rem;
     position: absolute;
     right: -11%;
   }
@@ -486,28 +481,28 @@ p {
   }
 
   .hero-info {
-    margin: 80px 150px;
+    margin: 4.45rem 8.34rem;
     text-align: left;
     width: 50%;
   }
 
   .hero-info h1{
     font-size: 4.25em;
-    line-height: 90px;
+    line-height: 5rem;
   }
 
   .hero-info p {
-    margin: 0px 5px;
+    margin: 0 0.278rem;
     font-size: 1.25em;
-    line-height: 35px;
+    line-height: 1.94rem;
     width: 80%;
   }
 
   .hero-button {
-    margin: 25px 0;
+    margin: 1.389rem 0;
     font-size: 1.15em;
     font-weight: 700;
-    padding: 15px 35px;
+    padding: 0.834rem 1.94rem;
     border-radius: 50px;
   }
 
@@ -517,31 +512,24 @@ p {
     background-repeat: no-repeat;
     background-color: hsl(257, 27%, 26%);
     width: 77%;
-    padding: 35px 70px;
-    margin-left: 155px;
+    padding: 1.94rem 3.89rem;
+    margin-left: 8.611rem;
     border-radius: 15px;
   }
 
-  /* .link-form form {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-  } */
-
   .form-input {
     width: 75%;
-    padding: 20px 25px;
-    margin: 20px 0;
-    border-radius: 5px;
+    padding: 1.12rem 1.389rem;
+    margin: 1.12rem 0;
+    border-radius: 0.278rem;
     font-size: 1.1em;
   }
 
   .form-submit-button {
     width: 20%;
     font-size: 1.2em;
-    padding: 20px 0px;
-    margin: 20px 0px 20px 30px;
+    padding: 1.12rem 0;
+    margin: 1.12rem 0 1.12rem 1.67rem;
     border-radius: 5px;
   }
 
@@ -553,8 +541,8 @@ p {
     text-align: left;
     width: 78%;
     background-color:white;
-    padding: 10px 40px;
-    margin: 0px 145px;
+    padding: 0.56rem 2.23rem;
+    margin: 0 8.056rem;
     border-radius: 5px;
     font-size: 1.4em;
     font-weight: 500;
@@ -563,8 +551,8 @@ p {
   .link-card p {
     color:black;
     border-bottom: 0;
-    padding: 10px 20px;
-    margin: 5px 0;
+    padding: 0.56rem 1.12rem;
+    margin: 0.278rem 0;
   }
 
   .copy-link {
@@ -572,31 +560,31 @@ p {
   }
 
   .copy-link p {
-    margin: 0px 5px;
+    margin: 0 0.278rem;
     color: hsl(180, 66%, 49%);
     border-bottom: none
   }
 
   .copy-link-button {
     font-size: 0.7em;
-    padding: 0px 25px;
+    padding: 0 1.389rem;
     border-radius: 5px;
     margin: 0;
   }
 
   .info {
-    padding: 0 150px
+    padding: 0 8.34rem
   }
   .info-title h1 {
     font-size: 2.1em;
-    margin: 10px 0;
+    margin: 0.56rem 0;
   }
 
   .info-title p {
     font-size: 1em;
-    line-height: 33px;
+    line-height: 1.83rem;
     width: 100%;
-    padding: 0 300px;
+    padding: 0 16.67rem;
   }
 
   .info-cards {
@@ -604,13 +592,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 1.67rem 0;
     position: relative;
   }
 
   .info-card {
-    margin: 10px 15px;
-    padding: 60px 30px 30px 30px;
+    margin: 0.56rem 0.834rem;
+    padding: 3.3rem 1.67rem 1.67rem 1.67rem;
     background-color: white;
     width: 100%;
     height: 100%;
@@ -621,21 +609,21 @@ p {
   }
 
   .info-card:nth-child(2){
-    margin-top: 50px;
+    margin-top: 2.78rem;
   }
   
   .info-card:nth-child(3){
-    margin-top: 100px;
+    margin-top: 5.55rem;
   }
 
   .info-card h2 {
     font-size: 1.2em;
-    margin: 15px 0;
+    margin: 0.834rem 0;
   }
 
   .info-card p {
     font-size: 0.85em;
-    line-height: 26px;
+    line-height: 1.44rem;
   }
 
   .card-icon {
@@ -650,13 +638,13 @@ p {
 
   .card-icon>img {
     margin-top: 25%;
-    margin-left: 23px;
+    margin-left: 1.27rem;
     width: 50%;
   }
 
   .green-bar {
     background-color: hsl(180, 66%, 49%);
-    height: 10px;
+    height: 0.56rem;
     width: 51%;
     position: absolute;
     left: 30%;
@@ -682,9 +670,9 @@ p {
   }
 
   .started-button {
-    margin: 25px;
+    margin: 1.389rem;
     font-size: 1.1em;
-    padding: 15px 45px;
+    padding: 0.834rem 2.5rem;
     border-radius: 50px;
   }
 
@@ -693,13 +681,13 @@ p {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    padding: 60px 180px;
+    padding: 3.33rem 10rem;
     height: 35vh
   }
 
   .footer-logo {
     width: 20%;
-    margin: 10px 0;
+    margin: 0.56rem 0;
   }
 
   .footer-logo img {
@@ -711,11 +699,11 @@ p {
   .footer-links {
     display: flex;
     justify-content: space-around;
-    margin-left: 220px;
+    margin-left: 12.22rem;
   }
 
   .footer-links-col {
-    margin: 10px 30px;
+    margin: 0.56rem 1.67rem;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -723,16 +711,16 @@ p {
 
   .footer-links-col h6 {
     font-size: 0.9em;
-    margin: 0px 0 10px 0;
+    margin: 0 0 0.56rem 0;
   }
 
   .footer-links-col ul {
-    margin: 5px 0;
+    margin: 0.278rem 0;
   }
 
   .footer-links-col ul li {
     padding: 0;
-    margin: 10px 0;
+    margin: 0.56rem 0;
     font-size: 0.8em;
   }
 
@@ -740,12 +728,12 @@ p {
     color:hsl(180, 66%, 49%);
   }
   .footer-icons {
-    margin-top: 10px;
-    margin-left: 50px
+    margin-top: 0.56rem;
+    margin-left: 2.78rem;
   }
 
   .footer-icons a {
-    margin: 0 15px;
+    margin: 0 0.834rem;
   }
 
   .footer-icons a:hover {
