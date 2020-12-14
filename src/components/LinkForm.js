@@ -30,16 +30,32 @@ const LinkForm = () => {
             node.style.color = 'hsl(0, 87%, 67%)'
             input.style.setProperty('--c', 'hsl(0, 87%, 67%)')
             node.style.fontSize = '0.9rem';
-            input.after(node)
+            if(window.screen.width < 750){
+                input.after(node)
 
-            //after a second, revert back to normal
-            setTimeout(
-                function(){
-                    input.style.border = 'none'
-                    input.style.setProperty('--c', 'hsl(257, 7%, 63%)')
-                    form.removeChild(form.childNodes[1])
-                }, 3000
-            )
+                //after a second, revert back to normal
+                setTimeout(
+                    function(){
+                        input.style.border = 'none'
+                        input.style.setProperty('--c', 'hsl(257, 7%, 63%)')
+                        form.removeChild(form.childNodes[1])
+                    }, 3000
+                )
+            }
+            else {
+                form.appendChild(node)
+
+                setTimeout(
+                    function(){
+                        input.style.border = 'none'
+                        input.style.setProperty('--c', 'hsl(257, 7%, 63%)')
+                        form.removeChild(form.childNodes[2])
+                    }, 3000
+                )
+            }
+            
+
+    
         } else {
             setIsLoading(true)
             axios.get(`${API_URL}${url}`)
