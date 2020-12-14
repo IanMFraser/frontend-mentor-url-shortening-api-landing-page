@@ -72,62 +72,62 @@ p {
   padding-top: 0.278rem;
 }
   
-  .logo {
-    width: 100%;
-    height: auto;
-  }
+.logo {
+  width: 100%;
+  height: auto;
+}
 
-  .fa-icon {
-    font-size: 1.7em;
-    cursor: pointer;
-    margin-top: 0.278rem;
-  }
+.fa-icon {
+  font-size: 1.7em;
+  cursor: pointer;
+  margin-top: 0.278rem;
+}
 
-  .navigation {
-    display: none;
-    position: absolute;
-    width: 90%;
-    height: auto;
-    background-color: hsl(257, 27%, 26%);
-    border-radius: 10px;
-    top: 95%;
-    padding: 1.67rem 0;
-    z-index: 2;
-  }
+.navigation {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  top: 95%;
+  padding: 1.67rem 0;
+  z-index: 2;
+}
   
-  .navigation ul {
-    text-align: center;
-  }
+.navigation ul {
+  text-align: center;
+}
 
-  .navigation ul li {
-    font-size: 1.25em;
-    padding: 0.4rem 0;
-  }
+.navigation ul li {
+  font-size: 1.25em;
+  padding: 0.4rem 0;
+}
 
-  .navigation ul li a {
-    color: white;
-  }
+.navigation ul li a {
+  color: white;
+}
 
-  .right {
-    border-top: 1px solid hsl(257, 7%, 63%);
-    padding: 1.12rem 0 0 0;
-  }
+.right {
+  border-top: 1px solid hsl(257, 7%, 63%);
+  padding: 1.12rem 0 0 0;
+}
 
-  .sign-up-button {
-    padding: 0.834rem 7.2rem;
-    font-size: 1em;
-    border-radius: 50px;
-  }
+.sign-up-button {
+  padding: 0.834rem 4.2rem;
+  font-size: 1em;
+  border-radius: 50px;
+}
 
-  .hero {
+.hero {
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .hero-img {
-    width: 145vw;
-    padding: 0 1.94rem;
-  }
+.hero-img {
+  width: 145vw;
+  padding: 0 1.94rem;
+}
 
   .hero-img img {
     width: 100%;
@@ -313,7 +313,7 @@ p {
     height: 59vh;
     text-align: center;
     position: relative;
-    padding: 0 1.389rem;
+    /* padding: 0 1.389rem; */
   }
 
   .call-to-action-content {
@@ -323,7 +323,7 @@ p {
   }
 
   .call-to-action-content h1 {
-    font-size:2.3em;
+    font-size: 2.3em;
   }
 
   .started-button {

@@ -26,7 +26,7 @@ const Info = () => {
                     
                     <div className="info-card">
                         <div className="card-icon">
-                        <img src={records} alt="detailed-img"></img>
+                            <img src={records} alt="detailed-img"></img>
                         </div>
                         <h2>Detailed Records</h2>
                         <p>
@@ -38,7 +38,7 @@ const Info = () => {
                     </div>
                     <div className="info-card">
                         <div className="card-icon">
-                        <img src={customizable} alt="customizable-img"></img>
+                            <img src={customizable} alt="customizable-img"></img>
                         </div>
                         <h2>Fully Customizable</h2>
                         <p>
