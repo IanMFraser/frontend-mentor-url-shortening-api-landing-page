@@ -285,22 +285,22 @@ p {
   .card-icon {
     position: absolute;
     background-color:hsl(257, 27%, 26%);
-    border-radius: 50%;
-    width: 125px;
-    height: 125px;
+    border-radius: 100%;
+    width: 25vw;
+    height: 25vw;
     top: -15%;
     left: 35%;
   }
 
   .card-icon>img {
-    margin-top: 25px;
-    width: 55%;
+    margin-top: 25%;
+    width: 48%;
   }
 
   .green-bar {
     background-color: hsl(180, 66%, 49%);
     height: 75%;
-    width: 2%;
+    width: 2.5%;
     position: absolute;
     left: 48%;
     top: 15%;
@@ -570,6 +570,7 @@ p {
   .copy-link {
     display: flex;
   }
+
   .copy-link p {
     margin: 0px 5px;
     color: hsl(180, 66%, 49%);
@@ -640,15 +641,15 @@ p {
   .card-icon {
     position: absolute;
     background-color:hsl(257, 27%, 26%);
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    border-radius: 100%;
+    width: 6vw;
+    height: 6vw;
     top: -12%;
     left: 7%;
   }
 
   .card-icon>img {
-    margin-top: 20px;
+    margin-top: 25%;
     margin-left: 23px;
     width: 50%;
   }
