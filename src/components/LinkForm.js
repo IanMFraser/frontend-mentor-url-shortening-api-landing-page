@@ -30,6 +30,7 @@ const LinkForm = () => {
             node.style.color = 'hsl(0, 87%, 67%)'
             input.style.setProperty('--c', 'hsl(0, 87%, 67%)')
             node.style.fontSize = '0.9rem';
+            
             if(window.screen.width < 750){
                 input.after(node)
 
@@ -78,7 +79,7 @@ const LinkForm = () => {
         if(shortUrl !== ''){
             setDisplayedLinks( d => [...d, obj])
         }
-    }, [shortUrl])
+    }, [shortUrl, url])
 
     return(
         <>
