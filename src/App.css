@@ -602,6 +602,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     margin: 30px 0;
+    position: relative;
   }
 
   .info-card {
@@ -653,10 +654,10 @@ p {
   .green-bar {
     background-color: hsl(180, 66%, 49%);
     height: 10px;
-    width: 31%;
+    width: 51%;
     position: absolute;
-    left: 34%;
-    top: 65%;
+    left: 30%;
+    top: 45%;
     z-index: 1;
   }
 
