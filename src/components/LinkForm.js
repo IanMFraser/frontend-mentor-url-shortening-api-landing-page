@@ -79,7 +79,7 @@ const LinkForm = () => {
         if(shortUrl !== ''){
             setDisplayedLinks( d => [...d, obj])
         }
-    }, [shortUrl, url])
+    }, [shortUrl])
 
     return(
         <>
