@@ -6,16 +6,20 @@ import customizable from '../images/icon-fully-customizable.svg'
 const Info = () => {
     return(
         <section className="info">
+
             <div className="info-title">
                     <h1>Advanced Statistics</h1>
                     <p>Track how your links are performing across the web
                 with our advanced statistics dashboard.
                     </p>
             </div>
+
                 <div className="info-cards">
                     <div className="info-card">
                         <div className="card-icon">
-                            <img src={recognition} alt="brand-img"></img>
+                            <div className="icon">
+                                <img src={recognition} alt="brand-img"></img>
+                            </div>
                         </div>
                         <h2>Brand Recognition</h2>
                         <p>Boost your brand recognition with each click.
@@ -26,7 +30,9 @@ const Info = () => {
                     
                     <div className="info-card">
                         <div className="card-icon">
-                            <img src={records} alt="detailed-img"></img>
+                            <div className="icon">
+                                <img src={records} alt="detailed-img"></img>
+                            </div>
                         </div>
                         <h2>Detailed Records</h2>
                         <p>
@@ -36,9 +42,12 @@ const Info = () => {
                         helps inform better decisions.
                         </p>
                     </div>
+
                     <div className="info-card">
                         <div className="card-icon">
-                            <img src={customizable} alt="customizable-img"></img>
+                            <div className="icon">
+                                <img src={customizable} alt="customizable-img"></img>
+                            </div>
                         </div>
                         <h2>Fully Customizable</h2>
                         <p>
@@ -48,8 +57,10 @@ const Info = () => {
                         audience engagement.
                         </p>
                     </div>
+
                     <div className="green-bar"></div>
                 </div>
+
             </section>
     )
 }

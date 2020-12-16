@@ -29,7 +29,8 @@ const LinkForm = () => {
             node.appendChild(message)
             node.style.color = 'hsl(0, 87%, 67%)'
             input.style.setProperty('--c', 'hsl(0, 87%, 67%)')
-            node.style.fontSize = '0.9rem';
+            node.style.fontSize = '0.75rem';
+            node.style.textAlign = 'left';
             
             if(window.screen.width < 750){
                 input.after(node)
@@ -86,7 +87,7 @@ const LinkForm = () => {
         <section className="link-form-container">
             <div className="link-form">
                 <form onSubmit={onSubmit}>
-                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input"></input>
+                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input" label="form-input"></input>
                     <button className="form-submit-button" type="submit">Shorten It!</button>
                 </form>
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}
