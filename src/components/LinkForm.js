@@ -87,7 +87,7 @@ const LinkForm = () => {
         <section className="link-form-container">
             <div className="link-form">
                 <form onSubmit={onSubmit}>
-                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input" label="form-input"></input>
+                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input" name="label element"></input>
                     <button className="form-submit-button" type="submit">Shorten It!</button>
                 </form>
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}
