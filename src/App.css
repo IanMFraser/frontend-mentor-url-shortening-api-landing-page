@@ -68,7 +68,6 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .header {
@@ -93,8 +92,7 @@ p {
   width: 90%;
   padding: 1.1rem 1rem;
   border-radius: 10px;
-  top: 1.5%;
-  z-index: 2;
+  top: 2%;
 }
   
 .nav-sections li {
@@ -315,6 +313,10 @@ p {
   padding: 5.5rem 0;
 }
 
+.call-to-action-content {
+  margin: 0 auto;
+}
+
 .call-to-action-content h1 {
   font-size: 1.5rem;
 }
@@ -337,7 +339,7 @@ p {
 }
 
 .footer-logo {
-  width: 35%;
+  width: 125px;
   margin: 0.56rem 0;
 }
 
@@ -389,7 +391,7 @@ p {
   width: 25px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1024px) {
   
   .header {
     justify-content: flex-start;
@@ -570,6 +572,7 @@ p {
   .info {
     padding: 4rem 8.34rem
   }
+
   .info-title h1 {
     font-size: 2.1em;
     margin: 0.56rem 0;
@@ -643,21 +646,14 @@ p {
     position: absolute;
     top: 45%;
     left: 29%;
-    width: 475px;
+    width: 450px;
     height: 0;
   }
 
   .call-to-action {
     background-image: url('./images/bg-boost-desktop.svg');
     background-size: cover;
-    height: 33vh;
-
-  }
-
-  .call-to-action-content {
-    position: absolute;
-    top: 22%;
-    left: 35%;
+    padding: 4rem 5rem;
   }
 
   .call-to-action-content h1 {
@@ -676,7 +672,7 @@ p {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    padding: 3.33rem 10rem;
+    padding: 3.33rem 3.5rem 3.33rem 10rem;
   }
 
   .footer-logo {
@@ -693,7 +689,7 @@ p {
   .footer-links {
     display: flex;
     justify-content: space-around;
-    margin-left: 12.22rem;
+    margin-left: 5rem;
   }
 
   .footer-links-col {
@@ -723,7 +719,7 @@ p {
   }
   .footer-icons {
     margin-top: 0.56rem;
-    margin-left: 2.78rem;
+    margin-right: 0
   }
 
   .footer-icons a {
@@ -735,6 +731,7 @@ p {
   }
 
   .footer-icons a img {
-    width: 11%;
+    width: 20px;
+    height: auto;
   }
 }
