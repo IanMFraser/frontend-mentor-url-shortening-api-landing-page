@@ -8,7 +8,8 @@ const LinkForm = () => {
     const [shortUrl, setShortUrl] = useState('')
     const [displayedLinks, setDisplayedLinks] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    const API_URL = `https://api.shrtco.de/v2/shorten?url=`
+    //const API_URL = `https://api.shrtco.de/v2/shorten?url=`
+    const API_URL = `http://localhost:3001/api/genurl`
 
     const changeHandler = (e) => {
         setUrl(e.target.value)
@@ -60,13 +61,20 @@ const LinkForm = () => {
     
         } else {
             setIsLoading(true)
-            axios.get(`${API_URL}${url}`)
-            .then(res => {
-                const data = res.data.result
-                setIsLoading(false)
-                setShortUrl(data.short_link)
-                setUrl('')
-            })
+            // axios.get(`${API_URL}${url}`)
+            // .then(res => {
+            //     const data = res.data.result
+            //     setIsLoading(false)
+            //     setShortUrl(data.short_link)
+            //     setUrl('')
+            // })
+            axios.post(API_URL, { longUrl: url})
+                .then(res => {
+                    const data = res.data
+                    setIsLoading(false)
+                    setShortUrl(data.shortUrl)
+                    setUrl('')
+                })
         }
     }
 
@@ -86,8 +94,8 @@ const LinkForm = () => {
         <>
         <section className="link-form-container">
             <div className="link-form">
-                <form onSubmit={onSubmit}>
-                    <input placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input" name="label element"></input>
+                <form onSubmit={onSubmit} method="POST">
+                    <input required placeholder="Shorten a link here..." onChange={changeHandler} value={url} className="form-input" type="url"></input>
                     <button className="form-submit-button" type="submit">Shorten It!</button>
                 </form>
                 { isLoading ? <Loader type="Oval" color="#00BFFF" height={30} width={30} className="loader" /> : null}

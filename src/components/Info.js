@@ -10,7 +10,7 @@ const Info = () => {
             <div className="info-title">
                     <h1>Advanced Statistics</h1>
                     <p>Track how your links are performing across the web
-                with our advanced statistics dashboard.
+                    with our advanced statistics dashboard.
                     </p>
             </div>
 
@@ -35,8 +35,7 @@ const Info = () => {
                             </div>
                         </div>
                         <h2>Detailed Records</h2>
-                        <p>
-                        Gain insights into who is clicking your
+                        <p>Gain insights into who is clicking your
                         links. Knowing when and where
                         people engage with your content
                         helps inform better decisions.
@@ -50,8 +49,7 @@ const Info = () => {
                             </div>
                         </div>
                         <h2>Fully Customizable</h2>
-                        <p>
-                        Improve brand awareness and
+                        <p>Improve brand awareness and
                         content discoverability through
                         customizable links, supercharging
                         audience engagement.

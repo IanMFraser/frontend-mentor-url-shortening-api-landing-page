@@ -8,7 +8,7 @@ import logo from '../images/logo.svg'
 const Footer = () => {
     return(
         <footer className="footer">
-            <div class="footer-logo">
+            <div className="footer-logo">
                 <img src={logo} alt="footer-logo"></img>
             </div>
             <div className="footer-links">
