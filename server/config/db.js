@@ -1,10 +1,11 @@
 //load mongoose
 const mongoose = require('mongoose');  
 //load config 
-const config = require('config');
+//const config = require('config');
 //fetch uri
-const db = config.get('mongouri');
+//const db = config.get('mongouri');
 
+const uri = `mongodb+srv://imfraser:${process.env.MONGO_PW}@cluster0.vzbjq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 //set up options for connection
 const connectOptions = {
   useNewUrlParser: true,
@@ -16,7 +17,7 @@ const connectOptions = {
 //connect to MongoDB
 const connectDB = async () => {
     try{
-        await mongoose.connect(db, connectOptions); 
+        await mongoose.connect(uri, connectOptions); 
         console.log('Connected to MongoDB...');
     } catch (err) {
         console.log(err.message);
