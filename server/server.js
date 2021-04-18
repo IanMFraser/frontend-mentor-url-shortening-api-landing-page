@@ -1,7 +1,8 @@
 //load and initalize express server
 const express = require('express');
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
+require('dotenv').config();
 //add express port
 const PORT = process.env.PORT || 3001;
 
