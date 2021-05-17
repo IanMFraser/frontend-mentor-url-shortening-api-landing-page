@@ -1,12 +1,9 @@
 //load mongoose
 const mongoose = require('mongoose');  
-//load config 
-//const config = require('config');
-//fetch uri
-//const db = config.get('mongouri');
 
+//fetch uri
 const uri = `mongodb+srv://imfraser:${process.env.MONGO_PW}@cluster0.vzbjq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
-console.log(process.env.MONGO_PW)
+
 //set up options for connection
 const connectOptions = {
   useNewUrlParser: true,
