@@ -99,4 +99,4 @@ const LinkForm = () => {
     )
 }
 
-export default LinkForm
+export default LinkForm;

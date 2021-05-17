@@ -2,7 +2,7 @@ import React from 'react'
 import LinkCard from './LinkCard'
 
 const DisplayLinks = ({links}) => {
-    console.log(links)
+
     return(
         <div className="display-links">
             <ul>
