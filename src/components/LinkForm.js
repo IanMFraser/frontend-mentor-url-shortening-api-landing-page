@@ -9,7 +9,7 @@ const LinkForm = () => {
     const [displayedLinks, setDisplayedLinks] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     //const API_URL = `https://api.shrtco.de/v2/shorten?url=`
-    const API_URL = `https://ifurl.page/api/genurl`
+    const API_URL = `https://www.ifurl.page/api/genurl`
 
     const changeHandler = (e) => {
         setUrl(e.target.value)
@@ -61,13 +61,6 @@ const LinkForm = () => {
     
         } else {
             setIsLoading(true)
-            // axios.get(`${API_URL}${url}`)
-            // .then(res => {
-            //     const data = res.data.result
-            //     setIsLoading(false)
-            //     setShortUrl(data.short_link)
-            //     setUrl('')
-            // })
             axios.post(API_URL, { longUrl: url})
                 .then(res => {
                     const data = res.data
