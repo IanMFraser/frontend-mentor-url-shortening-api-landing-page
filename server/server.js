@@ -10,12 +10,12 @@ const PORT = process.env.PORT || 3001;
 //connect to database
 const connectDB = require('./config/db')
 connectDB();
-
+console.log('connected')
 //return response for testing 
 app.use(cors());
 app.use(express.json());
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "www.ifurl.page"); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "www.ifurl.page");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
