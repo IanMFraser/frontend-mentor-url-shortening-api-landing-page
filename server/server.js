@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 //connect to database
 const connectDB = require('./config/db')
 connectDB();
-console.log('connected')
+
 //return response for testing 
 app.use(cors());
 app.use(express.json());
