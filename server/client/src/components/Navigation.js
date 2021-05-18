@@ -1,24 +1,38 @@
 import React from 'react'
+import NavBar from 'react-bootstrap/NavBar'
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
 
 const Navigation = () => {
     return(
-        <nav className="navigation">
-            <ul>
-                <li>
-                    <ul className="nav-sections">
-                        <li><a href="http://localhost:3000/">Features</a></li>
-                        <li><a href="http://localhost:3000/">Pricing</a></li>
-                        <li><a href="http://localhost:3000/">Resources</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul className="nav-sections right">
-                        <li><a href="http://localhost:3000/">Login</a></li>
-                        <li><button className="button sign-up-button">Sign Up</button></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <NavBar className="navigation">
+            <NavBar.Brand href="#">IFURL</NavBar.Brand>
+            <Nav as="ul">
+                <Nav.Item as="li">
+                    <Nav as="ul">
+                        <Nav.Item as="li">
+                            <Nav.Link href="#">Features</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Nav.Link href="#">Pricing</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Nav.Link href="#">Resources</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Nav.Item>
+                <Nav.Item as="li">
+                    <Nav as="ul" >
+                        <Nav.Item as="li">
+                            <Nav.Link href="#">Login</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Button>Sign Up</Button>
+                        </Nav.Item>
+                    </Nav>
+                </Nav.Item>
+            </Nav>
+        </NavBar>
     )
 }
 
