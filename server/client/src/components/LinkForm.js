@@ -8,7 +8,7 @@ const LinkForm = () => {
     const [shortUrl, setShortUrl] = useState('')
     const [displayedLinks, setDisplayedLinks] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    const API_URL = `http://localhost:3001`
+    const API_URL = `http://localhost:3001/api/genurl`
 
     const changeHandler = (e) => {
         setUrl(e.target.value)
