@@ -8,8 +8,7 @@ const LinkForm = () => {
     const [shortUrl, setShortUrl] = useState('')
     const [displayedLinks, setDisplayedLinks] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    //const API_URL = `https://api.shrtco.de/v2/shorten?url=`
-    const API_URL = `https://www.ifurl.page/api/genurl`
+    const API_URL = `http://localhost:3001`
 
     const changeHandler = (e) => {
         setUrl(e.target.value)

@@ -1,4 +1,4 @@
 {
     "mongouri": "mongodb+srv://imfraser:${password}@cluster0.vzbjq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "baseuri": "https://www.ifurl.page/"
+    "baseuri": "http://localhost:3001"
 }

@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
             if (url) {
               res.json(url);
             } else {
-              const shortUrl = baseUrl + urlCode;
+              const shortUrl = baseUrl + '/' + urlCode;
               console.log(shortUrl)
               url = new Url({
                 longUrl,
